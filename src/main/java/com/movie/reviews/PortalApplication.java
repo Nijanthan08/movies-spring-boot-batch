@@ -1,4 +1,4 @@
-package com.movie.portal;
+package com.movie.reviews;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
