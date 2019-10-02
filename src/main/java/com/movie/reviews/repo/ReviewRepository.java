@@ -1,4 +1,4 @@
-package com.movie.repo;
+package com.movie.reviews.repo;
 
 import org.springframework.data.repository.CrudRepository;
 
