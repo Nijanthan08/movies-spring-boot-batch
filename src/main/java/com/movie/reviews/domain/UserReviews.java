@@ -8,6 +8,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "reviews")
 public class UserReviews {
+	
+	public UserReviews() {
+	}
 
 	@Id
 	@Column(name = "id")
