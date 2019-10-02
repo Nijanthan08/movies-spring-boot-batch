@@ -1,5 +1,7 @@
 package com.movie.reviews.processor;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,17 +25,20 @@ public class MovieReviewProcessor implements ItemProcessor<List<UserReviews>, Li
 		LOG.info("Movie Review Processor....");
 
 		LOG.debug("Total User Ratings... " + list.size());
-		
+
 		// Group all the Ratings based on the Movie
 		Map<Integer, List<UserReviews>> map = list.stream()
 				.collect(Collectors.groupingBy(UserReviews::getMovieId, Collectors.toList()));
 
 		List<Ratings> ratings = new ArrayList<>();
+		DecimalFormat df = new DecimalFormat("#.##");
+		df.setRoundingMode(RoundingMode.CEILING);
 
 		// Calculate average Rating for each movie and get the list of Ratings
 		map.forEach((movieId, review) -> {
-			OptionalDouble average = review.parallelStream().mapToDouble(UserReviews::getRating).average();
-			ratings.add(new Ratings(movieId, average.getAsDouble()));
+			OptionalDouble optional = review.parallelStream().mapToDouble(UserReviews::getRating).average();
+			Double averageRating = Double.valueOf(df.format(optional.getAsDouble()));
+			ratings.add(new Ratings(movieId, averageRating));
 		});
 
 		return ratings;
