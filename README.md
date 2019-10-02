@@ -7,3 +7,9 @@ Please note the Batch Application is added to process the User Reviews submitted
 WEB APP: https://github.com/Nijanthan08/movies-web-app <br/>
 REST API: https://github.com/Nijanthan08/movies-rest-api
 
+Please follow the steps mentioned below to run the Batch Application in your local:
+
+1. Make sure to install the following softwares mentioned below 
+
+Java SE Development Kit 8 -> https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 
+Apache Maven -> https://maven.apache.org/download.cgi
