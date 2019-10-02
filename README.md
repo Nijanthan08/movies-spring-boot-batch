@@ -15,7 +15,7 @@ Please follow the steps mentioned below to run the Batch Application in your loc
     Apache Maven: https://maven.apache.org/download.cgi <br/>
     Eclipse IDE: https://www.eclipse.org/downloads/packages/release/2019-09/r/eclipse-ide-enterprise-java-developers
    
-2. Make use of the following link mentioned below to configure maven
+2. Make use of the following link mentioned below to configure Maven
 
     Maven Configuration -> https://www.tutorialspoint.com/maven/maven_environment_setup.htm
     
