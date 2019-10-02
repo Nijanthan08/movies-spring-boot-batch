@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.movie.reviews.domain.Ratings;
 
-public interface ReviewRepository extends CrudRepository<Ratings, Integer> {
+public interface RatingsRepository extends CrudRepository<Ratings, Integer> {
 
 }
