@@ -11,7 +11,7 @@ Please follow the steps mentioned below to run the Batch Application in your loc
 
 1. Make sure to install the following softwares mentioned below 
 
-    Java SE Development Kit 8: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 
+    Java SE Development Kit 8: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html <br/>
     Apache Maven: https://maven.apache.org/download.cgi <br/>
     Eclipse IDE: https://www.eclipse.org/downloads/packages/release/2019-09/r/eclipse-ide-enterprise-java-developers
    
