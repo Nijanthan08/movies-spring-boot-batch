@@ -8,27 +8,21 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "ratings")
 public class Ratings {
-	
+
+	public Ratings() {
+	}
+
+	public Ratings(Integer movieId, Double avgRating) {
+		this.movieId = movieId;
+		this.avgRating = avgRating;
+	}
+
 	@Id
-	@Column(name = "id")
-	private Integer id;
-	
 	@Column(name = "movieId")
 	private Integer movieId;
-	
+
 	@Column(name = "rating")
 	private Double avgRating;
-	
-	@Column(name = "totalRatings")
-	private Integer totalRatings;
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
 
 	public Integer getMovieId() {
 		return movieId;
@@ -46,12 +40,4 @@ public class Ratings {
 		this.avgRating = avgRating;
 	}
 
-	public Integer getTotalRatings() {
-		return totalRatings;
-	}
-
-	public void setTotalRatings(Integer totalRatings) {
-		this.totalRatings = totalRatings;
-	}
-	
 }
