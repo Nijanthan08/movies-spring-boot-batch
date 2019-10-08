@@ -30,7 +30,7 @@ Please follow the steps mentioned below to run the Batch Application in your loc
 
 4. Import the project to Eclipse using the Existing Maven Project Option
 
-5. Update the properties file with the SQL Database used by the REST API
+5. Update the application.properties file with the SQL Database used by the REST API
 
 6. Open commannd prompt in the project folder and run the following command mentioned below to trigger the Batch Processing
 
