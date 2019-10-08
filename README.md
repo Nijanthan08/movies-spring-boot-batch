@@ -4,13 +4,16 @@
 
 Note: Batch Application is added to process the User Reviews submitted through the WEB APP mentioned below. Please go through the Movie Review Portal WEB APP & Rest API to understand the need for Batch Processing.
 
-WEB APP: https://github.com/Nijanthan08/movies-web-app <br/>
+WEB APP: 
+
+      https://github.com/Nijanthan08/movies-web-app 
+      
 REST API: Refer any one of the following repository to host the backend REST API as per your preference.
 
       https://github.com/Nijanthan08/movies-rest-api (Built using Node.js)
       
       https://github.com/Nijanthan08/movies-spring-boot-rest-api (Built using Spring Boot)
-
+      
 Please follow the steps mentioned below to run the Batch Application in your local:
 
 1. Make sure to install the following softwares mentioned below 
